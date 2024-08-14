@@ -75,7 +75,7 @@
     <!-- HEADER -->
     <section id="header" class="bg-customDarkGreen text-white flex px-28 py-10">
         <div class="w-1/2 py-10">
-            <h1 class="text-h1 leading-h1 pb-h1">Especialista em Regularização de Obras e Imóveis</h1>
+            <h1 class="text-h1 font-medium leading-h1">Especialista em Regularização de Obras e Imóveis</h1>
             <h2 class="text-h2 leading-h2 pb-h2">Regularize seu imóvel para ficar tranquilo</h2>
             <p class="text-p leading-p pb-p">Texto Lorem Ipsum sit dolor lorem ipsum sit dolor lorem ispum sit dolor sit
                 dolor lorem ipsum sit dolor lorem ispum sit dolor sit dolor lorem ipsum sit dolor lorem </p>
@@ -84,79 +84,123 @@
                 <button class="bg-customGreen text-white px-4 py-2 rounded">Saber mais</button>
             </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 py-10">
             <img src="imgs/img-header.png" alt="">
         </div>
     </section>
 
     <!-- SERVICES -->
     <section id="services" class="text-customDarkBlue px-28 py-20 flex flex-col items-center">
-        <h2 class="text-h2 leading-h2 mb-10">Veja como posso te ajudar</h2>
-        <div class="flex">
-            <article class="flex flex-col items-center space-x-4">
-                <img src="imgs/icon.svg" alt="" class="w-16 h-16">
-                <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
-                <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore</p>
-            </article>
-            <article class="flex flex-col items-center space-x-4">
-                <img src="imgs/icon.svg" alt="" class="w-16 h-16">
-                <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
-                <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
-            </article>
-            <article class="flex flex-col items-center space-x-4">
-                <img src="imgs/icon.svg" alt="" class="w-16 h-16">
-                <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
-                <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-            </article>
+        <h2
+            class="text-h2 leading-h2 relative inline-block after:content-[''] after:block after:w-full after:h-0.5 after:bg-customGreen after:mt-2">
+            Veja como posso te ajudar
+        </h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <article class="flex flex-col items-center space-x-4">
+                    <img src="imgs/icon.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
+                    <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore</p>
+                </article>
+            </div>
+            <div class="carousel-item">
+                <article class="flex flex-col items-center space-x-4">
+                    <img src="imgs/icon-1.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
+                    <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
+                </article>
+            </div>
+            <div class="carousel-item">
+                <article class="flex flex-col items-center space-x-4">
+                    <img src="imgs/icon-2.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
+                    <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                </article>
+            </div>
+        </div>
+        <div class="carousel-dots flex justify-center mt-4">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </section>
+
 
     <!-- BENEFITS -->
     <section id="benefits">
         <div class="bg-customLighGray mx-40 p-10 flex flex-col items-center text-customDarkBlue">
-            <div>
+            <div class="mb-6 p-4 rounded border border-customMediumGray text-center">
                 <p>Conheça os benefícios da regularização do seu imóvel e os riscos de não realizar o processo</p>
             </div>
-            <div class="flex justify-center">
-                <div class="mr-20">
-                    <h1>Benefícios</h1>
-                    <span></span>
-                    <p>Benefícios lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Benefícios lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Benefícios lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Benefícios lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Benefícios lorem ipsum sit dolor</p>
+            <div class="flex justify-center mt-4">
+                <div class="mr-20 w-1/2">
+                    <h1 class="text-customGreen text-4xl font-bold mb-6">Benefícios</h1>
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
+                            <p>Benefícios lorem ipsum sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
+                            <p>Benefícios ipsum sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
+                            <p>Benefícios lorem ipsum sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
+                            <p>Benefícios lorem sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
+                            <p>Benefícios sit dolor</p>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <h1>Riscos</h1>
-                    <span></span>
-                    <p>Riscos lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Riscos lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Riscos lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Riscos lorem ipsum sit dolor</p>
-                    <span></span>
-                    <p>Riscos lorem ipsum sit dolor</p>
+                <div class="w-1/2">
+                    <h1 class="text-customDarkGray text-4xl font-bold mb-6">Riscos</h1>
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
+                            <p>Riscos lorem ipsum sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
+                            <p>Riscos lorem ipsum sit dolor litud</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
+                            <p>Riscos lorem ipsum sit dolor</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
+                            <p>Riscos lorem ipsum</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
+                            <p>Riscos lorem ipsum sit</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- ABOUT US -->
     <section id="aboutUs" class="flex px-28 py-10">
         <div class="w-1/2 py-10 text-customDarkBlue">
-            <p>Sobre nós</p>
-            <h1 class="text-h1 leading-h1 pb-h1">Atendendo há 20 anos com expertise no interior de São Paulo</h1>
-            <p class="text-p leading-p pb-p">TEstamos localizados na cidade de Registro, atendendo cidades do interior
+            <p class="bg-customMediumGray text-customDarkBlue px-4 py-1 mb-2 rounded-md inline-block">Sobre nós</p>
+            <h1 class="text-h1 font-medium leading-h1 pb-h1">Atendendo há 20 anos com expertise no interior de São Paulo
+            </h1>
+            <p class="text-p leading-p pb-p">Estamos localizados na cidade de Registro, atendendo cidades do interior
                 de São Paulo, como Sete Barras e Cajati. Recentemente, expandimos nosso atendimento para prestar
                 consultoria online por todo o país!
                 lorem ipsum sit dolor amet mbaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem
@@ -173,56 +217,224 @@
 
     <!-- FAQ -->
     <section id="faq" class="px-28 text-customDarkBlue">
-        <h2 class="text-h2 leading-h2 mb-4">Dúvidas Frequentes</h2>
-        <p class="text-p leading-p mb-10">Aqui estão algumas perguntas frequentes que podem te ajudar.</p>
+        <h2 class="text-h2 leading-h2">Dúvidas Frequentes</h2>
+        <p class="text-p leading-p border-b border-customMediumGray pb-8 pt-2">Aqui estão algumas perguntas frequentes
+            que podem te ajudar.</p>
         <div>
-            <div class="border-t border-customMediumGray py-4">
+            <div class="border-b border-customMediumGray py-8">
                 <button onclick="toggleFAQ(1)"
-                    class="w-full text-left text-h3 leading-h3 focus:outline-none flex justify-between items-center">
-                    O que é regularização de imóveis?
-                    <span id="icon-1" class="text-2xl">+</span>
+                    class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                    Todos os imóveis podem ser regularizados?
+                    <span id="icon-1" class="text-customDarkBlue text-2xl">+</span>
                 </button>
-                <p id="answer-1" class="text-p leading-p hidden mt-2">A regularização de imóveis é o processo de
-                    legalização de uma
-                    propriedade, garantindo que esteja em conformidade com as leis e regulamentações locais.</p>
+                <p id="answer-1" class="text-customDarkGray leading-6 mt-4 hidden">
+                    O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
+                    fatores,
+                    incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
+                    governamentais
+                    envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
+                    documentos
+                    necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                </p>
             </div>
-            <div class="border-t border-customMediumGray py-4">
+
+            <div class="border-b border-customMediumGray py-8">
                 <button onclick="toggleFAQ(2)"
-                    class="w-full text-left text-h3 leading-h3 focus:outline-none flex justify-between items-center">
+                    class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
                     Quais documentos são necessários?
-                    <span id="icon-2" class="text-2xl">+</span>
+                    <span id="icon-2" class="text-customDarkBlue text-2xl">+</span>
                 </button>
-                <p id="answer-2" class="text-p leading-p hidden mt-2">Os documentos necessários variam de acordo com o
-                    tipo de
-                    regularização, mas geralmente incluem escritura, certidão de ônus, e planta do imóvel.</p>
+                <p id="answer-2" class="text-customDarkGray leading-6 mt-4 hidden">
+                    O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
+                    fatores,
+                    incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
+                    governamentais
+                    envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
+                    documentos
+                    necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                </p>
             </div>
-            <div class="border-t border-customMediumGray py-4">
+
+            <div class="border-b border-customMediumGray py-8">
                 <button onclick="toggleFAQ(3)"
-                    class="w-full text-left text-h3 leading-h3 focus:outline-none flex justify-between items-center">
+                    class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
                     Quanto tempo leva o processo?
-                    <span id="icon-3" class="text-2xl">+</span>
+                    <span id="icon-3" class="text-customDarkBlue text-2xl">+</span>
                 </button>
-                <p id="answer-3" class="text-p leading-p hidden mt-2">O tempo pode variar, mas o processo de
-                    regularização geralmente
-                    leva de 6 a 12 meses.</p>
+                <p id="answer-3" class="text-customDarkGray leading-6 mt-4 hidden">
+                    O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
+                    fatores,
+                    incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
+                    governamentais
+                    envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
+                    documentos
+                    necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                </p>
             </div>
+
         </div>
     </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="bg-customLighGray mx-20 my-20 flex items-center text-customDarkBlue">
+            <div class="w-1/2 px-6 py-4 bg-customGreen flex justify-center items-center">
+                <img src="imgs/img-contact.png" alt="">
+            </div>
+            <div class="w-1/2 px-12 py-10 text-customDarkBlue">
+                <h1 class="text-h1 leading-h1 pb-h1">Comece agora sua regularização</h1>
+                <p class="text-p leading-p pb-p">Podemos te ajudar com a regularização do seu imóvel ou obra. Atendemos
+                    na região do Vale do Ribeira e prestamos consultoria online.</p>
+                <div class="mt-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <button class="bg-customGreen text-white text-h3 px-4 py-2 rounded w-full">Enviar
+                            Mensagem</button>
+                        <button
+                            class="bg-customMediumGray text-customDarkGray text-h3 px-4 py-2 rounded w-full">Escrever
+                            Email</button>
+                        <button
+                            class="bg-customMediumGray text-customDarkGray text-h3 px-4 py-2 rounded w-full">Instagram</button>
+                        <button
+                            class="bg-customMediumGray text-customDarkGray text-h3 px-4 py-2 rounded w-full">Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-customLightGray px-20 my-20">
+            <div class="container mx-auto px-8">
+                <div class="flex justify-between space-x-10">
+                    <!-- Logo -->
+                    <div class="w-1/3 bg-customLighGray p-10">
+                        <img src="imgs/logo-gray.svg" alt="SV Regulariza">
+                        <p class="text-customDarkGray mt-4">
+                            Fale um pouco sobre a empresa, lorem ipsum sit dolor Fale um pouco sobre a empresa, lorem
+                            ipsum sit dolor Fale um pouco sobre a empresa, lorem ipsum sit dolor Fale um pouco sobre a
+                            empresa, lorem ipsum sit dolor Fale um pouco sobre a empresa, lorem ipsum sit dolor
+                        </p>
+                    </div>
+                    <!-- Contact -->
+                    <div class="w-1/4 space-y-4 text-customDarkGray">
+                        <h3 class="text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">Fale Conosco</h3>
+                        <p>(13) 12345-6789</p>
+                        <p>email@email.com.br</p>
+                        <p>Atendemos no Vale do Ribeira e online</p>
+                        <p><a href="" class="hover:underline hover:text-customGreen">Facebook</a></p>
+                        <p><a href="" class="hover:underline hover:text-customGreen">Instagram</a></p>
+                    </div>
+                    <!-- Explore -->
+                    <div class="w-1/4 space-y-4">
+                        <h3 class="text-customDarkBlue text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">
+                            Explore</h3>
+                        <ul class="space-y-4">
+                            <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Home</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-customDarkGray hover:underline hover:text-customGreen">Serviços</a></li>
+                            <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Sobre
+                                    Nós</a></li>
+                            <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">FAQ</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-customDarkGray hover:underline hover:text-customGreen">Contato</a></li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div class="w-1/4 space-y-4">
+                        <h3 class="text-customDarkBlue text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">
+                            Serviços</h3>
+                        <ul class="space-y-4">
+                            <li><a href="#"
+                                    class="text-customDarkGray hover:underline hover:text-customGreen">Regularização na
+                                    Receita Federal</a></li>
+                            <li><a href="#"
+                                    class="text-customDarkGray hover:underline hover:text-customGreen">Regularização em
+                                    Prefeitura</a></li>
+                            <li><a href="#"
+                                    class="text-customDarkGray hover:underline hover:text-customGreen">Regularização de
+                                    Imóveis no Cartório</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
     <script>
+        // FAQ section function
         function toggleFAQ(index) {
             const answer = document.getElementById(`answer-${index}`);
             const icon = document.getElementById(`icon-${index}`);
+            const button = icon.closest('button');
 
-            // Toggle visibility
+            // Toggle visibility and styles
             if (answer.classList.contains('hidden')) {
                 answer.classList.remove('hidden');
                 icon.textContent = '−';  // Change icon to minus
+                button.classList.replace('text-customDarkBlue', 'text-customGreen');
+                icon.classList.replace('text-customDarkBlue', 'text-customGreen');
             } else {
                 answer.classList.add('hidden');
                 icon.textContent = '+';  // Change icon to plus
+                button.classList.replace('text-customGreen', 'text-customDarkBlue');
+                icon.classList.replace('text-customGreen', 'text-customDarkBlue');
             }
         }
+
+
+
+        // services carrousel function
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.carousel-item');
+            const dots = document.querySelectorAll('.carousel-dots .dot');
+            let currentItem = 0;
+            const maxItems = items.length;
+
+            function updateCarousel() {
+                items.forEach((item, index) => {
+                    item.classList.remove('active', 'prev', 'next');
+                    dots[index].classList.remove('active');
+
+                    if (index === currentItem) {
+                        item.classList.add('active');
+                        dots[index].classList.add('active');
+                    } else if (index === (currentItem - 1 + maxItems) % maxItems) {
+                        item.classList.add('prev');
+                    } else if (index === (currentItem + 1) % maxItems) {
+                        item.classList.add('next');
+                    }
+                });
+            }
+
+            function nextItem() {
+                currentItem = (currentItem + 1) % maxItems;
+                updateCarousel();
+            }
+
+            function setCurrentItem(index) {
+                currentItem = index;
+                updateCarousel();
+            }
+
+            // Automatização do carrossel
+            setInterval(nextItem, 3000);
+
+            // Clique nos dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => setCurrentItem(index));
+            });
+
+            // Clique nos cards
+            items.forEach((item, index) => {
+                item.addEventListener('click', () => setCurrentItem(index));
+            });
+
+            updateCarousel();
+        });
+
+
+
     </script>
 </body>
 
