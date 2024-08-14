@@ -53,10 +53,13 @@
 <body class="bg-customLightGray">
 
     <!-- NAVBAR -->
-    <div class="px-20">
-        <nav class="flex items-center">
-            <img src="imgs/logo-green.svg" alt="logo-green.png" class="cursor-pointer">
-            <ul class="flex-1 text-center">
+    <div class="px-6 lg:px-20 py-4 bg-white shadow">
+        <nav class="flex items-center justify-between">
+            <!-- Logo -->
+            <img src="imgs/logo-green.svg" alt="logo-green.png" class="cursor-pointer w-24 h-auto">
+
+            <!-- Menu for large screens -->
+            <ul class="hidden lg:flex flex-1 text-center">
                 <li class="list-none inline-block px-5"><a href="#"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Home</a>
                 </li>
@@ -65,7 +68,8 @@
                 </li>
                 <li class="list-none inline-block px-5"><a href="#"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Sobre
-                        Nós</a></li>
+                        Nós</a>
+                </li>
                 <li class="list-none inline-block px-5"><a href="#"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Dúvidas</a>
                 </li>
@@ -73,28 +77,72 @@
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Contato</a>
                 </li>
             </ul>
-            <button class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir Orçamento!</button>
+
+            <!-- Button for large screens -->
+            <button
+                class="hidden lg:block bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir
+                Orçamento!</button>
+
+            <!-- Hamburger icon for small to large screens -->
+            <div class="lg:hidden">
+                <button id="hamburger" class="focus:outline-none">
+                    <svg class="w-8 h-8 text-customDarkGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden flex flex-col items-center bg-white shadow-lg mt-2 rounded-lg py-4">
+            <a href="#"
+                class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Home</a>
+            <a href="#"
+                class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Serviços</a>
+            <a href="#"
+                class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Sobre
+                Nós</a>
+            <a href="#"
+                class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Dúvidas</a>
+            <a href="#"
+                class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Contato</a>
+            <button
+                class="block w-full mt-4 bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir
+                Orçamento!</button>
+        </div>
     </div>
 
+
+
     <!-- HEADER -->
-    <section id="header" class="bg-customDarkGreen text-white px-28 py-8">
-        <div class="container mx-auto flex justify-center items-center">
-            <div class="w-1/2">
-                <h1 class="text-h1 font-medium leading-h1">Especialista em Regularização de Obras e Imóveis</h1>
-                <h2 class="text-h2 leading-h2 pb-h2">Regularize seu imóvel para ficar tranquilo</h2>
-                <p class="text-p leading-p pb-p">Texto Lorem Ipsum sit dolor lorem ipsum sit dolor lorem ispum sit dolor sit
-                    dolor lorem ipsum sit dolor lorem ispum sit dolor sit dolor lorem ipsum sit dolor lorem </p>
-                <div class="flex space-x-4 mt-8">
-                    <button class="bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir Orçamento Agora!</button>
-                    <button class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Saber mais</button>
+    <section id="header" class="bg-customDarkGreen text-white px-6 md:px-28 py-8">
+        <div class="lg:container mx-auto flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h1 class="text-2xl md:text-h1 font-medium leading-tight md:leading-h1">Especialista em Regularização de
+                    Obras e Imóveis</h1>
+                <h2 class="text-xl md:text-h2 leading-normal md:leading-h2 pb-4 md:pb-h2">Regularize seu imóvel para
+                    ficar tranquilo</h2>
+                <p class="text-sm md:text-p leading-normal md:leading-p pb-4 md:pb-p">Texto Lorem Ipsum sit dolor lorem
+                    ipsum sit dolor lorem ispum sit dolor sit dolor lorem ipsum sit dolor lorem ispum sit dolor sit
+                    dolor lorem ipsum sit dolor lorem</p>
+                <div class="flex flex-col items-center md:flex-row md:space-x-4 space-y-4 md:space-y-0 mt-4 md:mt-8">
+                    <button
+                        class="bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Pedir
+                        Orçamento Agora!</button>
+                    <button
+                        class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Saber
+                        mais</button>
                 </div>
             </div>
-            <div class="w-1/2">
-                <img src="imgs/img-header.png" alt="">
+            <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                <img src="imgs/img-header.png" alt="" class="w-full md:w-auto">
             </div>
         </div>
     </section>
+
 
     <div class="container mx-auto">
 
@@ -109,7 +157,8 @@
                     <article class="flex flex-col items-center space-x-4">
                         <img src="imgs/icon.svg" alt="" class="w-28 h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
-                        <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
                             do
                             eiusmod tempor incididunt ut labore</p>
                     </article>
@@ -118,7 +167,8 @@
                     <article class="flex flex-col items-center space-x-4">
                         <img src="imgs/icon-1.svg" alt="" class="w-28 h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
-                        <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore eu
+                        <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore
+                            eu
                             fugiat
                             nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
                     </article>
@@ -141,8 +191,9 @@
         </section>
 
         <!-- BENEFITS -->
+        <!-- TODO: is not responsive for long sentences -->
         <section id="benefits">
-            <div class="bg-customLighGray mx-40 mt-12 mb-16 p-8 flex flex-col items-center text-customDarkBlue">
+            <div class="bg-customLighGray mx-40 mt-12 mb-16 p-12 flex flex-col items-center text-customDarkBlue">
                 <div class="mb-6 p-4 rounded border border-customMediumGray text-center">
                     <p>Conheça os benefícios da regularização do seu imóvel e os riscos de não realizar o processo</p>
                 </div>
@@ -152,7 +203,8 @@
                         <ul class="space-y-6">
                             <li class="flex items-center">
                                 <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios lorem ipsum sit dolor</p>
+                                <p>Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor Benefícios lorem
+                                    ipsum sit dolor Benefícios lorem ipsum sit dolor</p>
                             </li>
                             <li class="flex items-center">
                                 <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
@@ -205,16 +257,22 @@
         <section id="aboutUs" class="flex items-center justify-center px-28 py-8 my-8">
             <div class="w-1/2 py-8 text-customDarkBlue">
                 <p class="bg-customMediumGray text-customDarkBlue px-4 py-1 mb-2 rounded-md inline-block">Sobre nós</p>
-                <h1 class="text-h1 font-medium leading-h1 pb-h1">Atendendo há 20 anos com expertise no interior de São Paulo
+                <h1 class="text-h1 font-medium leading-h1 pb-h1">Atendendo há 20 anos com expertise no interior de São
+                    Paulo
                 </h1>
-                <p class="text-p leading-p pb-p">Estamos localizados na cidade de Registro, atendendo cidades do interior
+                <p class="text-p leading-p pb-p">Estamos localizados na cidade de Registro, atendendo cidades do
+                    interior
                     de São Paulo, como Sete Barras e Cajati. Recentemente, expandimos nosso atendimento para prestar
                     consultoria online por todo o país!
                     lorem ipsum sit dolor amet mbaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem
                     Ipsum. </p>
                 <div class="flex space-x-4 mt-4">
-                    <button class="bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir Orçamento!</button>
-                    <button class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Saber mais</button>
+                    <button
+                        class="bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir
+                        Orçamento!</button>
+                    <button
+                        class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Saber
+                        mais</button>
                 </div>
             </div>
             <div class="w-1/2 ml-12">
@@ -225,7 +283,8 @@
         <!-- FAQ -->
         <section id="faq" class="px-28 text-customDarkBlue p-8 my-8">
             <h2 class="text-h2 leading-h2">Dúvidas Frequentes</h2>
-            <p class="text-p leading-p border-b border-customMediumGray pb-8 pt-2">Aqui estão algumas perguntas frequentes
+            <p class="text-p leading-p border-b border-customMediumGray pb-8 pt-2">Aqui estão algumas perguntas
+                frequentes
                 que podem te ajudar.</p>
             <div>
                 <div class="border-b border-customMediumGray py-8">
@@ -287,11 +346,13 @@
                 </div>
                 <div class="w-1/2 px-12 py-8 text-customDarkBlue">
                     <h1 class="text-h1 leading-h1 pb-h1">Comece agora sua regularização</h1>
-                    <p class="text-p leading-p pb-p">Podemos te ajudar com a regularização do seu imóvel ou obra. Atendemos
+                    <p class="text-p leading-p pb-p">Podemos te ajudar com a regularização do seu imóvel ou obra.
+                        Atendemos
                         na região do Vale do Ribeira e prestamos consultoria online.</p>
                     <div class="mt-4">
                         <div class="grid grid-cols-2 gap-4">
-                            <button class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">Enviar
+                            <button
+                                class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">Enviar
                                 Mensagem</button>
                             <button
                                 class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Escrever
@@ -311,7 +372,7 @@
     <div class="border-t border-customMediumGray my-12"></div>
 
     <!-- FOOTER -->
-    <footer class="bg-customLightGray px-20 my-20">
+    <footer class="bg-customLightGray px-20 mt-20 mb-8">
         <div class="container mx-auto px-8">
             <div class="flex justify-between space-x-8">
                 <!-- Logo -->
@@ -439,6 +500,12 @@
             });
 
             updateCarousel();
+        });
+
+        // Controlar a abertura e fechamento do menu hambúrguer
+        document.getElementById('hamburger').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
         });
 
 
