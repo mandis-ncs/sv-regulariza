@@ -147,19 +147,20 @@
     <div class="container mx-auto">
 
         <!-- SERVICES -->
-        <section id="services" class="text-customDarkBlue px-28 py-8 mt-8 flex flex-col items-center">
+        <section id="services" class="text-customDarkBlue px-6 lg:px-28 py-8 mt-8 flex flex-col items-center">
             <h2
                 class="text-h2 leading-h2 relative inline-block after:content-[''] after:block after:w-full after:h-0.5 after:bg-customGreen after:mt-2">
                 Veja como posso te ajudar
             </h2>
-            <div class="carousel">
+
+            <!-- Carousel for large screens -->
+            <div class="carousel hidden lg:flex">
                 <div class="carousel-item">
                     <article class="flex flex-col items-center space-x-4">
                         <img src="imgs/icon.svg" alt="" class="w-28 h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
                         <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed
-                            do
+                            sed do
                             eiusmod tempor incididunt ut labore</p>
                     </article>
                 </div>
@@ -168,8 +169,7 @@
                         <img src="imgs/icon-1.svg" alt="" class="w-28 h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
                         <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore
-                            eu
-                            fugiat
+                            eu fugiat
                             nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
                     </article>
                 </div>
@@ -183,75 +183,110 @@
                     </article>
                 </div>
             </div>
-            <div class="carousel-dots flex justify-center mt-4">
+            <div class="carousel-dots hidden lg:flex justify-center mt-4">
                 <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
+
+            <!-- Static cards for small to medium screens -->
+            <div class="flex flex-col gap-8 w-full lg:hidden mt-8">
+                <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
+                    <img src="imgs/icon.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
+                    <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore</p>
+                </div>
+                <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
+                    <img src="imgs/icon-1.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
+                    <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
+                </div>
+                <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
+                    <img src="imgs/icon-2.svg" alt="" class="w-28 h-28 mb-4">
+                    <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
+                    <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                </div>
+            </div>
         </section>
 
+
         <!-- BENEFITS -->
-        <!-- TODO: is not responsive for long sentences -->
         <section id="benefits">
-            <div class="bg-customLighGray mx-40 mt-12 mb-16 p-12 flex flex-col items-center text-customDarkBlue">
+            <div
+                class="bg-customLighGray mx-4 sm:mx-8 lg:mx-40 mt-12 mb-16 p-6 lg:p-12 flex flex-col items-center text-customDarkBlue">
                 <div class="mb-6 p-4 rounded border border-customMediumGray text-center">
                     <p>Conheça os benefícios da regularização do seu imóvel e os riscos de não realizar o processo</p>
                 </div>
-                <div class="flex justify-center mt-4">
-                    <div class="mr-20 w-1/2">
-                        <h1 class="text-customGreen text-4xl font-bold mb-6">Benefícios</h1>
-                        <ul class="space-y-6">
+                <div class="flex flex-col lg:flex-row justify-center mt-4 space-y-6 lg:space-y-0 lg:space-x-8 w-full">
+                    <div class="lg:w-1/2 max-w-lg mx-auto">
+                        <h1 class="text-customGreen text-2xl text-center lg:text-4xl lg:text-left font-bold mb-6">Benefícios</h1>
+                        <ul class="space-y-4 lg:space-y-6">
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor Benefícios lorem
-                                    ipsum sit dolor Benefícios lorem ipsum sit dolor</p>
+                                <span
+                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor
+                                    Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios ipsum sit dolor</p>
+                                <span
+                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Benefícios ipsum sit dolor</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios lorem ipsum sit dolor</p>
+                                <span
+                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Benefícios lorem ipsum sit dolor</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios lorem sit dolor</p>
+                                <span
+                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Benefícios lorem sit dolor</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2"></span>
-                                <p>Benefícios sit dolor</p>
+                                <span
+                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Benefícios sit dolor</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="w-1/2">
-                        <h1 class="text-customDarkGray text-4xl font-bold mb-6">Riscos</h1>
-                        <ul class="space-y-6">
+                    <div class="lg:w-1/2 max-w-lg mx-auto">
+                        <h1 class="text-customDarkGray text-2xl text-center lg:text-4xl lg:text-left font-bold mb-6">Riscos</h1>
+                        <ul class="space-y-4 lg:space-y-6">
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
-                                <p>Riscos lorem ipsum sit dolor</p>
+                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Riscos lorem ipsum lorem ipsum sit dolor Benefícios lorem ipsum sit
+                                    dolor Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor sit dolor
+                                </p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
-                                <p>Riscos lorem ipsum sit dolor litud</p>
+                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Riscos lorem ipsum sit dolor litud</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
-                                <p>Riscos lorem ipsum sit dolor</p>
+                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Riscos lorem ipsum sit dolor</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
-                                <p>Riscos lorem ipsum</p>
+                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Riscos lorem ipsum</p>
                             </li>
                             <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>
-                                <p>Riscos lorem ipsum sit</p>
+                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
+                                <p class="flex-1">Riscos lorem ipsum sit</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- ABOUT US -->
         <section id="aboutUs" class="flex items-center justify-center px-28 py-8 my-8">
