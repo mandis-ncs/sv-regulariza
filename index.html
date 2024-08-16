@@ -11,8 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <style>
+        * {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <script defer>
         tailwind.config = {
             theme: {
                 extend: {
@@ -48,77 +55,6 @@
             }
         }
     </script>
-    <style>
-        * {
-            font-family: "Inter", Arial, Helvetica, sans-serif;
-        }
-
-        .carousel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            padding: 40px 0;
-            /* Adicionei padding para evitar que o conteúdo fique muito próximo das bordas */
-        }
-
-        .carousel-item {
-            flex: 1 0 0;
-            min-width: 300px;
-            max-width: 320px;
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-            opacity: 0.5;
-            transform: scale(0.8);
-            transform-origin: center center;
-            text-align: center;
-            padding-block: 60px;
-            padding-inline: 30px;
-            box-sizing: border-box;
-            box-shadow: none;
-            /* Nenhuma sombra por padrão */
-            border-radius: 4px;
-        }
-
-        .carousel-item.active {
-            opacity: 1;
-            transform: scale(1);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            /* Adiciona a sombra ao card ativo */
-        }
-
-        .carousel-item.next,
-        .carousel-item.prev {
-            opacity: 0.8;
-            transform: scale(0.9);
-        }
-
-        .carousel-dots {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .carousel-dots .dot {
-            width: 30px;
-            /* Aumenta a largura */
-            height: 6px;
-            /* Mantém a altura menor para um efeito retangular */
-            margin: 0 5px;
-            background-color: #d2d2d2;
-            /* Cor dos dots inativos */
-            border-radius: 10px;
-            /* Define o raio para ser metade da altura para arredondar as pontas */
-            display: inline-block;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .carousel-dots .dot.active {
-            background-color: #5eb29a;
-            /* Cor do dot ativo */
-        }
-    </style>
 </head>
 
 <body class="bg-customLightGray">
@@ -127,7 +63,8 @@
     <div class="px-6 lg:px-20 bg-white shadow">
         <nav class="flex items-center justify-between">
             <!-- Logo -->
-            <img src="imgs/logo-green-1.webp" alt="sv-regulariza-regularização-imóvel-logo-verde.png" class="cursor-pointer h-12 md:h-20">
+            <img src="imgs/logo-green-1.webp" alt="sv-regulariza-regularização-imóvel-logo-verde.png"
+                class="cursor-pointer h-12 md:h-20">
 
             <!-- Menu for large screens -->
             <ul class="hidden lg:flex lg:items-center text-center py-4">
@@ -209,7 +146,8 @@
                 </div>
             </div>
             <div class="w-full md:w-1/2 mt-6 md:mt-0">
-                <img src="imgs/img-header2.webp" loading="lazy" alt="sv-regulariza-regularização-imobiliária" class="w-full md:w-auto">
+                <img src="imgs/img-header2.webp" loading="lazy" alt="sv-regulariza-regularização-imobiliária"
+                    class="w-full md:w-auto">
             </div>
         </div>
     </section>
@@ -228,7 +166,8 @@
             <div class="carousel hidden lg:flex">
                 <div class="carousel-item">
                     <article class="flex flex-col items-center space-x-4">
-                        <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório" class="h-28 mb-4">
+                        <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório"
+                            class="h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
                         <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do
@@ -246,7 +185,8 @@
                 </div>
                 <div class="carousel-item">
                     <article class="flex flex-col items-center space-x-4">
-                        <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização na Receita Federal" class="h-28 mb-4">
+                        <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização na Receita Federal"
+                            class="h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
                         <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis
                             nostrud
@@ -263,7 +203,8 @@
             <!-- Static cards for small to medium screens -->
             <div class="flex flex-col gap-8 w-full lg:hidden mt-8">
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
-                    <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório" class="h-28 mb-4">
+                    <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório"
+                        class="h-28 mb-4">
                     <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
                     <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do
@@ -381,7 +322,8 @@
                 </div>
             </div>
             <div class="lg:w-1/2 mb-8 lg:mb-0 lg:ml-12">
-                <img src="imgs/img-about.webp" loading="lazy" alt="Sobre-nós-sv-regulariza-regularização-imóvel" class="w-full max-w-md mx-auto lg:max-w-none">
+                <img src="imgs/img-about.webp" loading="lazy" alt="Sobre-nós-sv-regulariza-regularização-imóvel"
+                    class="w-full max-w-md mx-auto lg:max-w-none">
             </div>
         </section>
 
@@ -450,7 +392,8 @@
             <div
                 class="bg-customLighGray mx-4 sm:mx-8 lg:mx-20 my-12 flex flex-col lg:flex-row items-center text-customDarkBlue">
                 <div class="w-full lg:w-1/2 px-6 py-4 bg-customGreen flex justify-center items-center mb-6 lg:mb-0">
-                    <img src="imgs/img-contact.webp" loading="lazy" alt="sv-regulariza-regularização-imóvel-contato-telefone-email" class="w-full md:w-auto">
+                    <img src="imgs/img-contact.webp" loading="lazy"
+                        alt="sv-regulariza-regularização-imóvel-contato-telefone-email" class="w-full md:w-auto">
                 </div>
                 <div class="w-full lg:w-1/2 px-6 sm:px-8 lg:px-12 py-8">
                     <h1
@@ -538,7 +481,7 @@
     </footer>
 
 
-    <script>
+    <script defer>
         // FAQ section function
         function toggleFAQ(index) {
             const answer = document.getElementById(`answer-${index}`);
@@ -607,15 +550,14 @@
 
             updateCarousel();
         });
+    </script>
 
-        // hamburguer menu
+    <script>
+        // hamburguer menu critical JS
         document.getElementById('hamburger').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('hidden');
         });
-
-
-
     </script>
 </body>
 
