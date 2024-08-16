@@ -20,40 +20,7 @@
     <noscript><link rel="stylesheet" href="style.css"></noscript>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        customGray: '#878787',
-                        customLighGray: '#ececec',
-                        customLightGray2: '#f8f8f8',
-                        customMediumGray: '#d2d2d2',
-                        customGreen: '#5eb29a',
-                        customDarkBlue: '#2b3a42',
-                        customDarkGray: '#545353',
-                        customDarkGreen: '#4B8E7B',
-                    },
-                    fontSize: {
-                        'h1': '48px',
-                        'h2': '32px',
-                        'h3': '20px',
-                        'p': '16px',
-                    },
-                    lineHeight: {
-                        'h1': '60px',
-                        'h2': '40px',
-                        'h3': '24px',
-                        'p': '24px',
-                    },
-                    padding: {
-                        'h1': '10px',
-                        'h2': '10px',
-                        'h3': '10px',
-                        'p': '10px',
-                    }
-                }
-            }
-        }
+        tailwind.config={theme:{extend:{colors:{customGray:"#878787",customLighGray:"#ececec",customLightGray2:"#f8f8f8",customMediumGray:"#d2d2d2",customGreen:"#5eb29a",customDarkBlue:"#2b3a42",customDarkGray:"#545353",customDarkGreen:"#4B8E7B"},fontSize:{h1:"48px",h2:"32px",h3:"20px",p:"16px"},lineHeight:{h1:"60px",h2:"40px",h3:"24px",p:"24px"},padding:{h1:"10px",h2:"10px",h3:"10px",p:"10px"}}}};
     </script>
 </head>
 
@@ -503,53 +470,7 @@
         }
 
         // services carrousel function
-        document.addEventListener('DOMContentLoaded', function () {
-            const items = document.querySelectorAll('.carousel-item');
-            const dots = document.querySelectorAll('.carousel-dots .dot');
-            let currentItem = 0;
-            const maxItems = items.length;
-
-            function updateCarousel() {
-                items.forEach((item, index) => {
-                    item.classList.remove('active', 'prev', 'next');
-                    dots[index].classList.remove('active');
-
-                    if (index === currentItem) {
-                        item.classList.add('active');
-                        dots[index].classList.add('active');
-                    } else if (index === (currentItem - 1 + maxItems) % maxItems) {
-                        item.classList.add('prev');
-                    } else if (index === (currentItem + 1) % maxItems) {
-                        item.classList.add('next');
-                    }
-                });
-            }
-
-            function nextItem() {
-                currentItem = (currentItem + 1) % maxItems;
-                updateCarousel();
-            }
-
-            function setCurrentItem(index) {
-                currentItem = index;
-                updateCarousel();
-            }
-
-            // Automatização do carrossel
-            setInterval(nextItem, 3000);
-
-            // Clique nos dots
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => setCurrentItem(index));
-            });
-
-            // Clique nos cards
-            items.forEach((item, index) => {
-                item.addEventListener('click', () => setCurrentItem(index));
-            });
-
-            updateCarousel();
-        });
+        document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll(".carousel-item"),t=document.querySelectorAll(".carousel-dots .dot");let c=0;const s=e.length;function n(){e.forEach(((e,n)=>{e.classList.remove("active","prev","next"),t[n].classList.remove("active"),n===c?(e.classList.add("active"),t[n].classList.add("active")):n===(c-1+s)%s?e.classList.add("prev"):n===(c+1)%s&&e.classList.add("next")}))}function a(e){c=e,n()}setInterval((function(){c=(c+1)%s,n()}),3e3),t.forEach(((e,t)=>{e.addEventListener("click",(()=>a(t)))})),e.forEach(((e,t)=>{e.addEventListener("click",(()=>a(t)))})),n()}));
     </script>
 
     <script>
