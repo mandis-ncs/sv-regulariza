@@ -20,6 +20,92 @@
     <noscript>
         <link rel="stylesheet" href="style.css">
     </noscript>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://svregulariza.com.br/#website",
+          "url": "https://svregulariza.com.br/",
+          "name": "SV Regulariza",
+          "inLanguage": "pt-BR",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://svregulariza.com.br/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://svregulariza.com.br/#webpage",
+          "url": "https://svregulariza.com.br/",
+          "name": "SV Regulariza - Regularização de Imóveis",
+          "description": "Serviços de regularização de imóveis no Vale do Ribeira e em São Paulo. Regularização de imóveis urbanos, rurais, comerciais e consultoria especializada.",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://svregulariza.com.br/#website"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "https://svregulariza.com.br/#primaryimage",
+            "url": "https://svregulariza.com.br/imgs/img-header2.webp",
+            "contentUrl": "https://svregulariza.com.br/imgs/img-header2.webp",
+            "inLanguage": "pt-BR",
+            "width": 1200,
+            "height": 800
+          },
+          "thumbnailUrl": "https://svregulariza.com.br/imgs/img-header2.webp",
+          "datePublished": "2023-09-29T21:40:39+00:00",
+          "dateModified": "2024-08-23T13:45:43+00:00",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "@id": "https://svregulariza.com.br/#breadcrumb",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://svregulariza.com.br/"
+            },{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Serviços",
+              "item": "https://svregulariza.com.br/#services"
+            },{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sobre Nós",
+              "item": "https://svregulariza.com.br/#aboutUs"
+            },{
+              "@type": "ListItem",
+              "position": 4,
+              "name": "FAQ",
+              "item": "https://svregulariza.com.br/#faq"
+            },{
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Contato",
+              "item": "https://svregulariza.com.br/#contact"
+            }]
+          },
+          "inLanguage": "pt-BR"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "SV Regulariza",
+          "url": "https://svregulariza.com.br/",
+          "logo": "https://svregulariza.com.br/imgs/logo-green-1.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-13-99777-4257",
+            "contactType": "Customer Service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+          }
+        }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer>
         tailwind.config = { theme: { extend: { colors: { customGray: "#878787", customLighGray: "#ececec", customLightGray2: "#f8f8f8", customMediumGray: "#d2d2d2", customGreen: "#5eb29a", customDarkBlue: "#2b3a42", customDarkGray: "#545353", customDarkGreen: "#4B8E7B" }, fontSize: { h1: "48px", h2: "32px", h3: "20px", p: "16px" }, lineHeight: { h1: "60px", h2: "40px", h3: "24px", p: "24px" }, padding: { h1: "10px", h2: "10px", h3: "10px", p: "10px" } } } };
@@ -37,28 +123,31 @@
 
             <!-- Menu for large screens -->
             <ul class="hidden lg:flex lg:items-center text-center py-4">
-                <li class="list-none inline-block px-5"><a href="#"
+                <li class="list-none inline-block px-5"><a href="#header"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Home</a>
                 </li>
-                <li class="list-none inline-block px-5"><a href="#"
+                <li class="list-none inline-block px-5"><a href="#services"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Serviços</a>
                 </li>
-                <li class="list-none inline-block px-5"><a href="#"
+                <li class="list-none inline-block px-5"><a href="#aboutUs"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Sobre
                         Nós</a>
                 </li>
-                <li class="list-none inline-block px-5"><a href="#"
+                <li class="list-none inline-block px-5"><a href="#faq"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Dúvidas</a>
                 </li>
-                <li class="list-none inline-block px-5"><a href="#"
+                <li class="list-none inline-block px-5"><a href="#contact"
                         class="no-underline px-2 text-customDarkGray hover:underline hover:text-customGreen">Contato</a>
                 </li>
             </ul>
 
             <!-- Button for large screens -->
-            <button
-                class="hidden lg:block bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir
-                Orçamento!</button>
+            <a href="https://api.whatsapp.com/send?phone=+5513997774257&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
+                target="_blank"><button
+                    class="hidden lg:block bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">
+                    Pedir
+                    Orçamento!
+                </button></a>
 
             <!-- Hamburger icon for small to large screens -->
             <div class="lg:hidden">
@@ -75,20 +164,23 @@
         <!-- Mobile menu (hidden by default) -->
         <div id="mobileMenu"
             class="hidden lg:hidden flex flex-col items-center bg-white shadow-lg mt-2 rounded-lg py-4">
-            <a href="#"
+            <a href="#header"
                 class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Home</a>
-            <a href="#"
+            <a href="#services"
                 class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Serviços</a>
-            <a href="#"
+            <a href="#aboutUs"
                 class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Sobre
                 Nós</a>
-            <a href="#"
+            <a href="#faq"
                 class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Dúvidas</a>
-            <a href="#"
+            <a href="#contact"
                 class="block py-2 text-customDarkGray hover:underline hover:text-customGreen w-full text-center">Contato</a>
-            <button
-                class="block w-full mt-4 bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">Pedir
-                Orçamento!</button>
+            <a
+                href="https://api.whatsapp.com/send?phone=+5513997774257&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"><button
+                    class="block w-full mt-4 bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white px-4 py-2 rounded">
+                    Pedir
+                    Orçamento!
+                </button></a>
         </div>
     </div>
 
@@ -99,19 +191,26 @@
         <div class="lg:container mx-auto flex flex-col md:flex-row justify-center items-center">
             <div class="w-full md:w-1/2 text-center md:text-left">
                 <h1 class="text-2xl md:text-h1 font-medium leading-tight md:leading-h1">Especialista em Regularização de
-                    Obras e Imóveis</h1>
-                <h2 class="text-xl md:text-h2 leading-normal md:leading-h2 pb-4 md:pb-h2">Regularize seu imóvel para
-                    ficar tranquilo</h2>
-                <p class="text-sm md:text-p leading-normal md:leading-p pb-4 md:pb-p">Texto Lorem Ipsum sit dolor lorem
-                    ipsum sit dolor lorem ispum sit dolor sit dolor lorem ipsum sit dolor lorem ispum sit dolor sit
-                    dolor lorem ipsum sit dolor lorem</p>
+                    Obras, Imóveis Residenciais e Comerciais</h1>
+                <h2 class="text-xl md:text-h2 leading-normal md:leading-h2 pb-4 md:pb-h2">Regularize seu imóvel com
+                    agilidade e segurança para evitar multas e valorizá-lo no mercado</h2>
+                <p class="text-sm md:text-p leading-normal md:leading-p pb-4 md:pb-p">A regularização de imóveis urbanos
+                    e rurais é fundamental para garantir a segurança jurídica e a valorização da sua propriedade. Em
+                    Registro/SP, nossa equipe oferece consultoria completa para que você possa regularizar seu imóvel
+                    com tranquilidade e segurança.</p>
+
                 <div class="flex flex-col items-center md:flex-row md:space-x-4 space-y-4 md:space-y-0 mt-4 md:mt-8">
-                    <button
-                        class="bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Pedir
-                        Orçamento Agora!</button>
-                    <button
-                        class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Saber
-                        mais</button>
+                    <a href="https://api.whatsapp.com/send?phone=+5513997774257&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
+                        target="_blank"><button
+                            class="bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
+                            Pedir
+                            Orçamento Agora!
+                        </button></a>
+                    <a href="#aboutUs">
+                        <button
+                            class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Saber
+                            mais</button>
+                    </a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 mt-6 md:mt-0">
@@ -144,18 +243,18 @@
                         <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório"
                             class="h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
-                        <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore</p>
+                        <p class="text-p text-center leading-p">Cuidamos de todo o processo de regularização do seu
+                            imóvel no cartório, incluindo averbação de construção, atualização da matrícula e registros.
+                            Tudo para que seu imóvel esteja legalmente protegido.</p>
                     </article>
                 </div>
                 <div class="carousel-item">
                     <article class="flex flex-col items-center space-x-4">
                         <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização em Prefeitura" class="h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
-                        <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat
-                            nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
+                        <p class="text-p text-center leading-p">Realizamos a regularização do seu imóvel junto à
+                            prefeitura, obtendo alvarás, licenças e regularizando construções irregulares para evitar
+                            multas e embargos.</p>
                     </article>
                 </div>
                 <div class="carousel-item">
@@ -163,9 +262,9 @@
                         <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização na Receita Federal"
                             class="h-28 mb-4">
                         <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
-                        <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                        <p class="text-p text-center leading-p">Auxiliamos na regularização fiscal do seu imóvel junto à
+                            Receita Federal, garantindo que tudo esteja em ordem para evitar problemas futuros com a
+                            União.</p>
                     </article>
                 </div>
             </div>
@@ -181,23 +280,23 @@
                     <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização de Imóveis no Cartório"
                         class="h-28 mb-4">
                     <h3 class="text-h3 text-center leading-h3 mb-4">Regularização de Imóveis no Cartório</h3>
-                    <p class="text-p text-center leading-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do
-                        eiusmod tempor incididunt ut labore</p>
+                    <p class="text-p text-center leading-p">Cuidamos de todo o processo de regularização do seu imóvel
+                        no cartório, incluindo averbação de construção, atualização da matrícula e registros. Tudo para
+                        que seu imóvel esteja legalmente protegido.</p>
                 </div>
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
                     <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização em Prefeitura" class="h-28 mb-4">
                     <h3 class="text-h3 text-center leading-h3 mb-4">Regularização em Prefeitura</h3>
-                    <p class="text-p text-center leading-p">in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur in reprehenderit in voluptate velit esse cillum dolore eu fugi</p>
+                    <p class="text-p text-center leading-p">Realizamos a regularização do seu imóvel junto à prefeitura,
+                        obtendo alvarás, licenças e regularizando construções irregulares para evitar multas e embargos.
+                    </p>
                 </div>
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
                     <img src="imgs/icon-3.webp" loading="lazy" alt="Regularização na Receita Federal" class="h-28 mb-4">
                     <h3 class="text-h3 text-center leading-h3 mb-4">Regularização na Receita Federal</h3>
-                    <p class="text-p text-center leading-p">et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                    <p class="text-p text-center leading-p">Auxiliamos na regularização fiscal do seu imóvel junto à
+                        Receita Federal, garantindo que tudo esteja em ordem para evitar problemas futuros com a União.
+                    </p>
                 </div>
             </div>
         </section>
@@ -218,28 +317,20 @@
                             <li class="flex items-center">
                                 <span
                                     class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor
-                                    Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor</p>
+                                <p class="flex-1">Evite multas e penalidades ao regularizar seu imóvel conforme as leis
+                                    municipais e estaduais.</p>
                             </li>
                             <li class="flex items-center">
                                 <span
                                     class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Benefícios ipsum sit dolor</p>
+                                <p class="flex-1">Valorize seu patrimônio ao garantir que o imóvel esteja legalmente
+                                    registrado e pronto para venda ou financiamento.</p>
                             </li>
                             <li class="flex items-center">
                                 <span
                                     class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Benefícios lorem ipsum sit dolor</p>
-                            </li>
-                            <li class="flex items-center">
-                                <span
-                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Benefícios lorem sit dolor</p>
-                            </li>
-                            <li class="flex items-center">
-                                <span
-                                    class="inline-block w-4 h-4 bg-customGreen rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Benefícios sit dolor</p>
+                                <p class="flex-1">Aumente a segurança jurídica da sua propriedade, evitando problemas
+                                    futuros com herdeiros e terceiros.</p>
                             </li>
                         </ul>
                     </div>
@@ -249,25 +340,19 @@
                         <ul class="space-y-4 lg:space-y-6">
                             <li class="flex items-center">
                                 <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Riscos lorem ipsum lorem ipsum sit dolor Benefícios lorem ipsum sit
-                                    dolor Benefícios lorem ipsum sit dolor Benefícios lorem ipsum sit dolor sit dolor
+                                <p class="flex-1">Você pode enfrentar multas pesadas e até a demolição do imóvel em
+                                    casos de irregularidades graves.
                                 </p>
                             </li>
                             <li class="flex items-center">
                                 <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Riscos lorem ipsum sit dolor litud</p>
+                                <p class="flex-1">Dificuldades em vender ou transferir o imóvel, já que irregularidades
+                                    podem bloquear transações.</p>
                             </li>
                             <li class="flex items-center">
                                 <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Riscos lorem ipsum sit dolor</p>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Riscos lorem ipsum</p>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2 flex-shrink-0"></span>
-                                <p class="flex-1">Riscos lorem ipsum sit</p>
+                                <p class="flex-1">Problemas com financiamentos e hipotecas, pois bancos exigem que o
+                                    imóvel esteja regularizado.</p>
                             </li>
                         </ul>
                     </div>
@@ -282,18 +367,25 @@
                 <p class="bg-customMediumGray text-customDarkBlue px-4 py-1 mb-2 rounded-md inline-block">Sobre nós</p>
                 <h1 class="text-3xl lg:text-h1 font-medium leading-tight lg:leading-h1 pb-4 lg:pb-h1">Atendendo há 20
                     anos com expertise no interior de São Paulo</h1>
-                <p class="text-base lg:text-p leading-relaxed lg:leading-p pb-4 lg:pb-p">Estamos localizados na cidade
-                    de Registro, atendendo cidades do interior de São Paulo, como Sete Barras e Cajati. Recentemente,
-                    expandimos nosso atendimento para prestar consultoria online por todo o país! Lorem ipsum sit dolor
-                    amet mbaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum.</p>
+                <p class="text-base lg:text-p leading-relaxed lg:leading-p pb-4 lg:pb-p">Estamos há mais de 20 anos
+                    atuando na regularização de imóveis no Vale do Ribeira e em todo o interior de São Paulo. Nossa
+                    expertise abrange desde a regularização de construções residenciais até a legalização de grandes
+                    empreendimentos comerciais e industriais. Além disso, oferecemos consultoria especializada para
+                    garantir que todos os requisitos legais sejam cumpridos, protegendo seu patrimônio.</p>
                 <div
                     class="flex flex-col sm:flex-row justify-center items-center lg:justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
-                    <button
-                        class="bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Pedir
-                        Orçamento!</button>
-                    <button
-                        class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">Saber
-                        mais</button>
+                    <a href="https://api.whatsapp.com/send?phone=+5513997774257&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
+                        target="_blank"><button
+                            class="bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
+                            Pedir
+                            Orçamento!
+                        </button></a>
+                    <a href="https://www.instagram.com/eng.sergiomuniz?utm_source=qr&igsh=MWl4M2g5NjE5OWZibg%3D%3D">
+                        <button
+                            class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded"
+                            target="_blank">Saber
+                            mais</button>
+                    </a>
                 </div>
             </div>
             <div class="lg:w-1/2 mb-8 lg:mb-0 lg:ml-12">
@@ -315,52 +407,135 @@
                 frequentes
                 que podem te ajudar.</p>
             <div>
+                <!-- FAQ 1 -->
                 <div class="border-b border-customMediumGray py-8">
                     <button onclick="toggleFAQ(1)"
                         class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
-                        Todos os imóveis podem ser regularizados?
+                        O que é a Regularização de Imóveis?
                         <span id="icon-1" class="text-customDarkBlue text-2xl">+</span>
                     </button>
                     <p id="answer-1" class="text-customDarkGray leading-6 mt-4 hidden">
-                        O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
-                        fatores,
-                        incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
-                        governamentais
-                        envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
-                        documentos
-                        necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                        A regularização de imóveis é o processo de tornar uma propriedade conforme as leis e
+                        regulamentos de zoneamento, construção e uso. Este processo assegura que o imóvel esteja dentro
+                        das normas legais, evitando problemas futuros com a prefeitura ou outros órgãos reguladores.
                     </p>
                 </div>
+                <!-- FAQ 2 -->
                 <div class="border-b border-customMediumGray py-8">
                     <button onclick="toggleFAQ(2)"
                         class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
-                        Quais documentos são necessários?
+                        Como funciona a regularização de imóveis?
                         <span id="icon-2" class="text-customDarkBlue text-2xl">+</span>
                     </button>
                     <p id="answer-2" class="text-customDarkGray leading-6 mt-4 hidden">
-                        O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
-                        fatores,
-                        incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
-                        governamentais
-                        envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
-                        documentos
-                        necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                        A regularização de imóveis envolve vários passos, desde a coleta de documentos essenciais até a
+                        adequação do imóvel às normas legais e a obtenção do habite-se. O processo varia dependendo do
+                        tipo de propriedade (urbana, rural, condomínio) e sua localização.
                     </p>
                 </div>
+                <!-- FAQ 3 -->
                 <div class="border-b border-customMediumGray py-8">
                     <button onclick="toggleFAQ(3)"
                         class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
-                        Quanto tempo leva o processo?
+                        Por que é importante regularizar sua propriedade?
                         <span id="icon-3" class="text-customDarkBlue text-2xl">+</span>
                     </button>
                     <p id="answer-3" class="text-customDarkGray leading-6 mt-4 hidden">
-                        O tempo necessário para regularizar um imóvel pode variar consideravelmente dependendo de vários
-                        fatores,
-                        incluindo a complexidade do caso, a localidade do imóvel e a carga de trabalho das entidades
-                        governamentais
-                        envolvidas. Geralmente, o processo pode levar de alguns meses a um ano. É essencial ter todos os
-                        documentos
-                        necessários prontos e seguir as orientações das autoridades locais para evitar atrasos.
+                        Regularizar seu imóvel evita problemas legais, valoriza a propriedade e garante segurança
+                        jurídica. Imóveis não regularizados podem enfrentar multas, dificuldades em vendas futuras ou
+                        até mesmo riscos de perda da propriedade.
+                    </p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(4)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Quais são os benefícios da regularização de imóveis?
+                        <span id="icon-4" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-4" class="text-customDarkGray leading-6 mt-4 hidden">
+                        Os benefícios da regularização de imóveis incluem segurança jurídica, maior facilidade na venda
+                        do imóvel, acesso a financiamentos e aumento da valorização do imóvel. Regularizar sua
+                        propriedade pode aumentar sua liquidez no mercado imobiliário.
+                    </p>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(5)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Quais são os passos para regularizar um imóvel?
+                        <span id="icon-5" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-5" class="text-customDarkGray leading-6 mt-4 hidden">
+                        O processo de regularização de um imóvel começa com a coleta de documentos necessários, seguida
+                        pela verificação de conformidade com as normas locais e termina com a obtenção do habite-se.
+                        Cada etapa requer atenção aos detalhes para garantir que o imóvel esteja em conformidade legal.
+                    </p>
+                </div>
+                <!-- FAQ 6 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(6)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Quais documentos são necessários para a regularização de imóveis?
+                        <span id="icon-6" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-6" class="text-customDarkGray leading-6 mt-4 hidden">
+                        Para regularizar um imóvel, você precisará de documentos como certidão de matrícula atualizada,
+                        alvará de construção, habite-se, entre outros. Verifique com a prefeitura local ou um
+                        especialista em regularização imobiliária para obter uma lista completa dos documentos
+                        necessários.
+                    </p>
+                </div>
+                <!-- FAQ 7 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(7)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Como regularizar imóveis rurais?
+                        <span id="icon-7" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-7" class="text-customDarkGray leading-6 mt-4 hidden">
+                        A regularização de imóveis rurais exige o cumprimento de requisitos específicos, incluindo
+                        regulamentos do INCRA e conformidade com leis ambientais. O processo pode incluir a obtenção de
+                        licenças e a regularização fundiária conforme a legislação vigente.
+                    </p>
+                </div>
+                <!-- FAQ 8 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(8)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Quais são os requisitos para regularizar imóveis urbanos?
+                        <span id="icon-8" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-8" class="text-customDarkGray leading-6 mt-4 hidden">
+                        A regularização de imóveis urbanos requer conformidade com as leis de zoneamento e construção
+                        municipais. Isso pode incluir ajustes na estrutura do imóvel e a obtenção de licenças
+                        específicas junto à prefeitura local.
+                    </p>
+                </div>
+                <!-- FAQ 9 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(9)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Como é feita a regularização de imóveis em condomínios?
+                        <span id="icon-9" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-9" class="text-customDarkGray leading-6 mt-4 hidden">
+                        Para regularizar imóveis em condomínios, é necessário seguir as normas específicas estabelecidas
+                        pelo condomínio e pela legislação local. Isso pode incluir a aprovação de modificações pela
+                        administração do condomínio e a conformidade com regulamentos municipais.
+                    </p>
+                </div>
+                <!-- FAQ 10 -->
+                <div class="border-b border-customMediumGray py-8">
+                    <button onclick="toggleFAQ(10)"
+                        class="w-full text-left text-customDarkBlue text-xl font-normal flex justify-between items-center">
+                        Como regularizar imóveis em áreas de risco?
+                        <span id="icon-10" class="text-customDarkBlue text-2xl">+</span>
+                    </button>
+                    <p id="answer-10" class="text-customDarkGray leading-6 mt-4 hidden">
+                        Imóveis localizados em áreas de risco precisam ser regularizados conforme normas específicas de
+                        construção e segurança. O processo geralmente envolve avaliações de risco e a implementação de
+                        medidas corretivas para garantir a segurança da propriedade e de seus ocupantes.
                     </p>
                 </div>
             </div>
@@ -386,20 +561,27 @@
                         class="text-3xl leading-tight lg:text-h1 lg:leading-h1 pb-h1 text-center lg:text-left text-customGreen font-medium">
                         Comece agora sua regularização</h1>
                     <p class="text-p leading-p pb-p text-center lg:text-left text-customDarkBlue">Podemos te ajudar com
-                        a regularização do
-                        seu imóvel ou obra. Atendemos na região do Vale do Ribeira e prestamos consultoria online.</p>
+                        a regularização do seu imóvel ou obra. Atendemos na região do Vale do Ribeira e prestamos
+                        consultoria online. Entre em contato conosco e saiba como podemos ajudá-lo a regularizar seu
+                        imóvel de forma rápida e eficiente.</p>
                     <div class="mt-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <button
-                                class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">Enviar
-                                Mensagem</button>
-                            <button
-                                class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Escrever
-                                Email</button>
-                            <button
-                                class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Instagram</button>
-                            <button
-                                class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Facebook</button>
+                            <a href="https://api.whatsapp.com/send?phone=+5513997774257&text=Ol%C3%A1,%20preciso%20regularizar%20meu%20im%C3%B3vel,%20poderia%20me%20ajudar?"
+                                target="_blank"><button
+                                    class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">
+                                    Abrir WhatsApp
+                                </button></a>
+                            <a href="mailto:sv@svregulariza.com.br"><button
+                                    class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">
+                                    Escrever
+                                    Email
+                                </button></a>
+                            <a href="https://www.instagram.com/eng.sergiomuniz?utm_source=qr&igsh=MWl4M2g5NjE5OWZibg%3D%3D"
+                                target="_blank"><button
+                                    class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Instagram</button></a>
+                            <a href="https://web.facebook.com/eng.sergiomuniz?mibextid=ZbWKwL&_rdc=1&_rdr"
+                                target="_blank"><button
+                                    class="bg-customMediumGray hover:bg-customDarkGreen hover:text-white transform transition-transform duration-200 hover:scale-105 text-customDarkGray text-h3 px-4 py-2 rounded w-full">Facebook</button></a>
                         </div>
                     </div>
                 </div>
@@ -420,32 +602,40 @@
                 <div class="bg-customLighGray p-8 lg:w-1/3">
                     <img src="imgs/logo-gray.webp" loading="lazy" alt="sv-regulariza-regularização-imóvel-logo-cinza">
                     <p class="text-customDarkGray mt-4">
-                        Fale um pouco sobre a empresa, lorem ipsum sit dolor Fale um pouco sobre a empresa, lorem ipsum
-                        sit dolor Fale um pouco sobre a empresa, lorem ipsum sit dolor Fale um pouco sobre a empresa,
-                        lorem ipsum sit dolor Fale um pouco sobre a empresa, lorem ipsum sit dolor
+                        A SV Regulariza é uma empresa especializada em regularização de imóveis, oferecendo serviços
+                        completos para garantir que seu patrimônio esteja sempre em conformidade com a lei. Entre em
+                        contato conosco e descubra como podemos ajudar você a proteger seu imóvel e valorizá-lo no
+                        mercado.
                     </p>
                 </div>
                 <!-- Contact -->
                 <div class="space-y-4 text-customDarkGray lg:w-1/4">
                     <h3 class="text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">Fale Conosco</h3>
-                    <p>(13) 12345-6789</p>
-                    <p>email@email.com.br</p>
+                    <p>(13) 99777-4257</p>
+                    <p>sv@svregulariza.com.br</p>
                     <p>Atendemos no Vale do Ribeira e online</p>
-                    <p><a href="" class="hover:underline hover:text-customGreen">Facebook</a></p>
-                    <p><a href="" class="hover:underline hover:text-customGreen">Instagram</a></p>
+                    <p><a href="https://web.facebook.com/eng.sergiomuniz?mibextid=ZbWKwL&_rdc=1&_rdr"
+                            class="hover:underline hover:text-customGreen" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/eng.sergiomuniz?utm_source=qr&igsh=MWl4M2g5NjE5OWZibg%3D%3D"
+                            class="hover:underline hover:text-customGreen" target="_blank">Instagram</a></p>
                 </div>
                 <!-- Explore -->
                 <div class="space-y-4 lg:w-1/4">
                     <h3 class="text-customDarkBlue text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">Explore
                     </h3>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Home</a></li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Serviços</a>
+                        <li><a href="#header"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Home</a></li>
+                        <li><a href="#services"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Serviços</a>
                         </li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Sobre Nós</a>
+                        <li><a href="#aboutUs" class="text-customDarkGray hover:underline hover:text-customGreen">Sobre
+                                Nós</a>
                         </li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">FAQ</a></li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Contato</a>
+                        <li><a href="#faq" class="text-customDarkGray hover:underline hover:text-customGreen">FAQ</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -454,11 +644,14 @@
                     <h3 class="text-customDarkBlue text-h3 font-medium border-t-2 border-customGreen pb-2 pt-4">Serviços
                     </h3>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
+                        <li><a href="#services"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
                                 na Receita Federal</a></li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
+                        <li><a href="#services"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
                                 em Prefeitura</a></li>
-                        <li><a href="#" class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
+                        <li><a href="#services"
+                                class="text-customDarkGray hover:underline hover:text-customGreen">Regularização
                                 de Imóveis no Cartório</a></li>
                     </ul>
                 </div>
