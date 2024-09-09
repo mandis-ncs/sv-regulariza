@@ -57,3 +57,27 @@
 .carousel-dots .dot.active {
     background-color: #5eb29a
 }
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5eb29a; /* Cor de fundo */
+    z-index: 9999; /* Coloca a tela de loading acima de todo o conteúdo */
+    display: flex;
+    flex-direction: column; /* Alinha a animação e a logo verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-logo {
+    margin-bottom: 20px; /* Espaçamento entre a animação e a logo */
+    width: 250px; /* Ajuste o tamanho da logo */
+    height: auto;
+}
+
+body.loading {
+    overflow: hidden; /* Previne rolagem enquanto a página carrega */
+}
