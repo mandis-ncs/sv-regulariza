@@ -203,6 +203,9 @@
     <!-- AOS CSS for animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-customLightGray">
@@ -305,7 +308,7 @@
                 <div class="flex flex-col items-center lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 mt-2 lg:mt-6">
                     <a href="https://api.whatsapp.com/send?phone=+5513997714580&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
                         target="_blank"><button
-                            class="bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
+                            class="animate__animated animate__pulse animate__infinite bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
                             Pedir Orçamento Agora!
                         </button></a>
                     <a href="#aboutUs">
@@ -469,16 +472,17 @@
                         20
                         anos com expertise no interior de São Paulo</h1>
                     <p class="text-base lg:text-p leading-relaxed lg:leading-p pb-4 lg:pb-p">Estamos há mais de 20 anos
-                        atuando na regularização de imóveis no Vale do Ribeira e em todo o interior de São Paulo. Nossa
-                        expertise abrange desde a regularização de construções residenciais até a legalização de grandes
-                        empreendimentos comerciais e industriais. Além disso, oferecemos consultoria especializada para
-                        garantir que todos os requisitos legais sejam cumpridos, protegendo seu patrimônio.</p>
+                        atuando na regularização de imóveis no Vale do Ribeira, com sede em Registro, São Paulo, e em
+                        todo o interior do estado. Nossa expertise abrange desde a regularização de construções
+                        residenciais até a legalização de grandes empreendimentos comerciais e industriais. Além disso,
+                        oferecemos consultoria especializada para garantir que todos os requisitos legais sejam
+                        cumpridos, protegendo seu patrimônio.</p>
                 </div>
                 <div
                     class="flex flex-col sm:flex-row justify-center items-center lg:justify-start items-start space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
                     <a href="https://api.whatsapp.com/send?phone=+5513997714580&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
                         target="_blank" data-aos="fade-right" data-aos-duration="1000"><button
-                            class="bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
+                            class="animate__animated animate__pulse animate__infinite bg-customDarkBlue hover:bg-customDarkGreen transform transition-transform duration-200 hover:scale-105 text-white max-w-fit px-4 py-2 rounded">
                             Pedir
                             Orçamento!
                         </button></a>
@@ -491,7 +495,7 @@
                     </a>
                 </div>
             </div>
-            <div class="lg:w-1/2 mb-8 lg:mb-0 lg:ml-12" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="lg:w-1/2 mb-8 lg:mb-0 lg:ml-12 max-w-fit" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="imgs/img-about-1200w.webp" alt="Sobre-nós-sv-regulariza-regularização-imóvel"
                     class="w-full max-w-md mx-auto lg:max-w-none" width="1200" height="800" srcset="
                             imgs/img-about-400w.webp 400w,
@@ -672,7 +676,7 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <a href="https://api.whatsapp.com/send?phone=+5513997714580&text=Ol%C3%A1,%20preciso%20regularizar%20meu%20im%C3%B3vel,%20poderia%20me%20ajudar?"
                                 target="_blank" data-aos="zoom-in" data-aos-duration="1000"><button
-                                    class="bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">
+                                    class="animate__animated animate__pulse animate__infinite bg-customGreen hover:bg-customDarkBlue transform transition-transform duration-200 hover:scale-105 text-white text-h3 px-4 py-2 rounded w-full">
                                     Abrir WhatsApp
                                 </button></a>
                             <a href="mailto:contato@svregulariza.com.br" data-aos="zoom-in"
@@ -707,10 +711,10 @@
                 <div class="bg-customLighGray p-8 lg:w-1/3">
                     <img src="imgs/logo-gray.webp" loading="lazy" alt="sv-regulariza-regularização-imóvel-logo-cinza">
                     <p class="text-customDarkGray mt-4">
-                        A SV Regulariza é uma empresa especializada em regularização de imóveis, oferecendo serviços
-                        completos para garantir que seu patrimônio esteja sempre em conformidade com a lei. Entre em
-                        contato conosco e descubra como podemos ajudar você a proteger seu imóvel e valorizá-lo no
-                        mercado.
+                        A SV Regulariza é uma empresa especializada em regularização de imóveis, com atuação no Vale do
+                        Ribeira, em Registro, São Paulo. Oferecemos serviços completos para garantir que seu patrimônio
+                        esteja sempre em conformidade com a lei. Entre em contato conosco e descubra como podemos ajudar
+                        você a proteger e valorizar seu imóvel no mercado.
                     </p>
                 </div>
                 <!-- Contact -->
@@ -766,11 +770,11 @@
 
     <!-- Whatsapp fixed -->
     <a href="https://api.whatsapp.com/send?phone=+5513997714580&text=Ol%C3%A1,%20gostaria%20de%20mais%20informações"
-        target="_blank"
+        target="_blank" id="whatsapp-button"
         class="fixed bottom-4 right-4 z-50 flex items-center bg-greenWhats text-white rounded-full p-2 shadow-lg transition-transform duration-200 hover:scale-105 lg:px-4 lg:py-2">
-        <!-- Ícone do WhatsApp -->
+        <!-- WhatsApp icon -->
         <img src="imgs/icon-whatsapp.png" alt="" class="md:px-2 md:h-8 h-14 p-1">
-        <!-- Texto "Whatsapp" para telas grandes -->
+        <!-- "Whatsapp" text for large screens -->
         <span class="hidden lg:inline-block">Whatsapp</span>
     </a>
 
@@ -830,6 +834,17 @@
         AOS.init({
             once: true
         });
+    </script>
+
+    <script>
+        const whatsappButton = document.getElementById('whatsapp-button');
+        function addTadaEffect() {
+            whatsappButton.classList.add('animate__animated', 'animate__tada');
+            whatsappButton.addEventListener('animationend', () => {
+                whatsappButton.classList.remove('animate__animated', 'animate__tada');
+            });
+        }
+        setInterval(addTadaEffect, 4000);
     </script>
 
 </body>
