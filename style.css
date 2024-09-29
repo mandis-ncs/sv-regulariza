@@ -19,8 +19,11 @@ html, body {
 
 .carousel-item {
     flex: 1 0 0;
-    min-width: 300px;
-    max-width: 320px;
+    min-width: 330px;
+    max-width: 400px;
+    height: 500px;
+    min-height: 400px;
+    max-height: 500px;
     transition: transform .5s, box-shadow .5s;
     opacity: .5;
     transform: scale(.8);
