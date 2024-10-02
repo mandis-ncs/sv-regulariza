@@ -1,8 +1,18 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
     max-width: 100vw
-  }
-  
+}
+
+body.loading {
+    overflow: hidden;
+    /* Previne rolagem enquanto a página carrega */
+    visibility: hidden;
+}
+
+body:not(.loading) * {
+    visibility: visible;
+}
 
 .carousel,
 .carousel-dots {
@@ -73,20 +83,22 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #5eb29a; /* Cor de fundo */
-    z-index: 9999; /* Coloca a tela de loading acima de todo o conteúdo */
+    background: #5eb29a;
+    /* Cor de fundo */
+    z-index: 9999;
+    /* Coloca a tela de loading acima de todo o conteúdo */
     display: flex;
-    flex-direction: column; /* Alinha a animação e a logo verticalmente */
+    flex-direction: column;
+    /* Alinha a animação e a logo verticalmente */
     justify-content: center;
     align-items: center;
+    visibility: visible;
 }
 
 .loading-logo {
-    margin-bottom: 20px; /* Espaçamento entre a animação e a logo */
-    width: 250px; /* Ajuste o tamanho da logo */
+    margin-bottom: 20px;
+    /* Espaçamento entre a animação e a logo */
+    width: 250px;
+    /* Ajuste o tamanho da logo */
     height: auto;
-}
-
-body.loading {
-    overflow: hidden; /* Previne rolagem enquanto a página carrega */
 }
